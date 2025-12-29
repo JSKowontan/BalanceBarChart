@@ -2,11 +2,12 @@
   "id": "com.custom.financial.balance.chart",
   "name": "Financial Balance Chart",
   "description": "Stacked bar chart for Assets/Liabilities",
+  "newInstancePrefix": "BalanceBarChart",
   "version": "1.0.0",
   "vendor": "autodeck.com",
   "eula": "autodeck.com",
   "license": "MIT",
-  "icon": "https://cdn.jsdelivr.net/gh/JSKowontan/financialPositionStackBar@1.0.0/stack-bar-icon.png",
+  "icon": "https://cdn.jsdelivr.net/gh/JSKowontan/BalanceBarChart@0a5e067b0b2af506b9961317dbeb6905ddd86a92/stack-bar-icon.png",
     "imports": [
     "datasource",
     "planning-model"
@@ -15,14 +16,14 @@
     {
       "kind": "main",
       "tag": "financial-balance-chart",
-      "url": "https://cdn.jsdelivr.net/gh/JSKowontan/financialPositionStackBar@1.0.0/BalanceBarChart.js",
+      "url": "https://cdn.jsdelivr.net/gh/JSKowontan/BalanceBarChart@0a5e067b0b2af506b9961317dbeb6905ddd86a92/BalanceBarChart.js",
       "integrity": "",
       "ignoreIntegrity": false
     },
     {
       "kind": "builder",
       "tag": "financial-balance-chart-builder",
-      "url": "https://cdn.jsdelivr.net/gh/JSKowontan/financialPositionStackBar@1.0.0/BalanceBarChart.js",
+      "url": "https://cdn.jsdelivr.net/gh/JSKowontan/BalanceBarChart@0a5e067b0b2af506b9961317dbeb6905ddd86a92/BalanceBarChart.js",
       "integrity": "",
       "ignoreIntegrity": false
     }
