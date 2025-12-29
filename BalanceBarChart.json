@@ -1,0 +1,67 @@
+{
+  "id": "com.custom.financial.balance.chart",
+  "name": "Financial Balance Chart",
+  "description": "Stacked bar chart for Assets/Liabilities",
+  "version": "1.0.0",
+  "vendor": "autodeck.com",
+  "eula": "autodeck.com",
+  "license": "MIT",
+  "icon": "https://cdn.jsdelivr.net/gh/JSKowontan/financialPositionStackBar@1.0.0/stack-bar-icon.png",
+    "imports": [
+    "datasource",
+    "planning-model"
+  ],
+  "webcomponents": [
+    {
+      "kind": "main",
+      "tag": "financial-balance-chart",
+      "url": "https://cdn.jsdelivr.net/gh/JSKowontan/financialPositionStackBar@1.0.0/BalanceBarChart.js",
+      "integrity": "",
+      "ignoreIntegrity": false
+    },
+    {
+      "kind": "builder",
+      "tag": "financial-balance-chart-builder",
+      "url": "https://cdn.jsdelivr.net/gh/JSKowontan/financialPositionStackBar@1.0.0/BalanceBarChart.js",
+      "integrity": "",
+      "ignoreIntegrity": false
+    }
+  ],
+  "properties": {
+    "widgetTitle": {
+      "type": "string",
+      "description": "Title of the chart",
+      "default": "Current & Non-current"
+    },
+    "chartData": {
+      "type": "string",
+      "description": "JSON Data",
+      "default": "[{\"label\":\"Assets\",\"current\":\"17.1\",\"nonCurrent\":\"3.6\"},{\"label\":\"Liabilities\",\"current\":\"7.1\",\"nonCurrent\":\"1.2\"}]"
+    },
+    "width": {
+      "type": "integer",
+      "default": 600
+    },
+    "height": {
+      "type": "integer",
+      "default": 300
+    }
+  },
+  "methods": {
+    "setChartData": {
+      "description": "Set data via script",
+      "parameters": [
+        {
+          "name": "data",
+          "type": "string",
+          "description": "JSON String"
+        }
+      ]
+    }
+  },
+  "events": {
+    "onBarClick": {
+      "description": "Triggered when a bar is clicked"
+    }
+  }
+}
